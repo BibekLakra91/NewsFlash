@@ -75,10 +75,21 @@ WSGI_APPLICATION = 'hello.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "railway",
+        "USER": "postgres",
+        "PASSWORD": "sIplWMSXNQepJXhUfJRYcOrmKNWxvBKt",
+        "HOST": "monorail.proxy.rlwy.net",
+        "PORT": "24087",
     }
 }
 
@@ -128,8 +139,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build','static')
 
 LOGIN_URL='/accounts/login'
 
-LOGIN_REDIRECT_URL='/tweet/'
-LOGOUT_REDIRECT_URL='/tweet/'
+LOGIN_REDIRECT_URL='/'
+LOGOUT_REDIRECT_URL='/'
