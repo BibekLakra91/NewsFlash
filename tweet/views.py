@@ -55,12 +55,10 @@ def register(request):
     if request.method == "POST":
         form = UserRegistratioinForm(request.POST)
         if form.is_valid():
-            # settings.ALLOW_WRITES = True
             user = form.save(commit=False)
             user.set_password(form.cleaned_data['password1'])
             user.save()
             login(request, user)
-            # settings.ALLOW_WRITES = False
             return redirect('tweet_list')
     else:
         form = UserRegistratioinForm()
