@@ -1,0 +1,5 @@
+- Developed and deployed a news web application for quick personal updates using Django and PostgreSQL, deployed on Vercel.
+- Database Management: Utilized Railway to create and manage the PostgreSQL database, benefiting from its ease of deployment and robust parallel processing capabilities.
+- Rapid Development and Scalability: Leveraged Django’s inbuilt methods to achieve rapid development and ensure the scalability of the application.
+- Backend Development: Implemented the backend logic with Django, incorporating login authorization and admin functionalities using Django’s built-in libraries.
+- Frontend Integration: Enhanced user interaction by integrating Bootstrap components into the frontend.
