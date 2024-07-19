@@ -10,7 +10,7 @@ NewsFlash
 <div class="container row gap-3">
     {% for tweet in tweets %}
     <div class="card" style="width: 18rem;">
-        <img src="{{tweet.photo.url}}" class="card-img-top" alt="...">
+        <img src="{{ tweet.photo.url }}" class="card-img-top" alt="photo">
         <div class="card-body">
           <h5 class="card-title">{{tweet.user.usermane}}</h5>
           <p class="card-text">{{tweet.text}}</p>

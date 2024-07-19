@@ -2,3 +2,7 @@
 - Implemented the Backend logic with Django framework. Handled logical errors with CRUD operations on the database
 - Utilized Railway to deploy and manage the PostgreSQL database, benefiting from its ease of deployment and robust parallel processing capabilities. Enhanced user interaction by integrating Bootstrap components into the Frontend pages
 - Leveraged Django’s inbuilt methods to achieve Rapid Development and ensure the seamless Scalability of the application
+
+date: 19/2/24
+Dockerizing the app: I need dev code and prod code on different container. Package psycopg made me do this
+aws cloud storage: Objet based cloud storage service
