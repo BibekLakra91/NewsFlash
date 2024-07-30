@@ -20,6 +20,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth.urls import views as auth_views
 
+admin.site.site_header = "NewsFlash Admin"
+admin.site.site_title = "NewFlash Admin Portal"
+admin.site.index_title = "Welcome to NewFlash!"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('tweet.urls')),
